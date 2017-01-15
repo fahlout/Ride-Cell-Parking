@@ -306,7 +306,7 @@ extension ParkingLocationSearchViewController {
             parkingLocationPayAndReserveButton.backgroundColor = .darkGray
             parkingLocationPayAndReserveButton.setTitle("Reserved", for: .normal)
         } else {
-            parkingLocationPayAndReserveButton.backgroundColor = .rideCellBlue
+            parkingLocationPayAndReserveButton.backgroundColor = .rideCellRed
             parkingLocationPayAndReserveButton.setTitle("Pay and Reserve", for: .normal)
         }
     }
@@ -358,6 +358,9 @@ extension ParkingLocationSearchViewController {
             let _ = DataProvider.shared.reserveParkingLocation(for: selectedParkingLocation.id, minutes: ReservationRequestMinutes(minutes: minutes), response: { (parkingLocation: ParkingLocation) in
                 self.updateParkingLocation(for: parkingLocation)
                 self.showSuccessfulReservationAlert(for: parkingLocation)
+                
+                // Save reservation start time
+                UserDefaults.standard.set(Date(), forKey: reservationStartTimeKey)
             }, error: { (error: Error) in
                 self.showAlert(with: "Oops", message: "Looks like your reservation did not go through. Please try again.")
             })
@@ -393,5 +396,8 @@ extension ParkingLocationSearchViewController {
     
     func didReserve(parkingLocation: ParkingLocation) {
         self.updateParkingLocation(for: parkingLocation)
+        
+        // Save reservation start time
+        UserDefaults.standard.set(Date(), forKey: reservationStartTimeKey)
     }
 }

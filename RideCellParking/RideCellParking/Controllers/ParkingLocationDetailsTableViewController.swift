@@ -62,7 +62,7 @@ class ParkingLocationDetailsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 7
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -112,10 +112,19 @@ class ParkingLocationDetailsTableViewController: UITableViewController {
             // Configure the cell...
             cell.setContent(for: reservationTime, action: { (time: Float) in
                 self.reservationTime = time
+                self.tableView.reloadData()
             })
             
             return cell
         } else if indexPath.row == 5 {
+            // Parking Location Cost
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TwoLabelsTableViewCell", for: indexPath) as! TwoLabelsTableViewCell
+            
+            // Configure the cell...
+            cell.setContent(for: "Total Cost", detail: "$\(String(format: "%.02f", cost()))")
+            
+            return cell
+        } else if indexPath.row == 6 {
             // Parking Location Reserve Button
             let cell = tableView.dequeueReusableCell(withIdentifier: "ButtonTableViewCell", for: indexPath) as! ButtonTableViewCell
             
@@ -155,5 +164,14 @@ class ParkingLocationDetailsTableViewController: UITableViewController {
         alertController.addAction(checkAction)
         alertController.preferredAction = checkAction
         present(alertController, animated: true, completion: nil)
+    }
+}
+
+extension ParkingLocationDetailsTableViewController {
+    
+    // MARK: - Cost
+    
+    func cost() -> Double {
+        return Double(Int(reservationTime)) * parkingLocation.costPerMinute
     }
 }

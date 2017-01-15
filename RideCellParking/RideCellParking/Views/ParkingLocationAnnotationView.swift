@@ -11,9 +11,9 @@ import MapKit
 
 class ParkingLocationAnnotationView: MapAnnotationView {
     
-    init(annotation: ParkingLocationAnnotation) {
-        let selectedImage = UIImage(named:"ParkingPin")
-        let deselectedImage = UIImage(named:"ParkingPinSmall")
+    init(annotation: ParkingLocationAnnotation, selectedImageName: String, deselectedImageName: String) {
+        let selectedImage = UIImage(named: selectedImageName)
+        let deselectedImage = UIImage(named: deselectedImageName)
         super.init(annotation: annotation, reuseIdentifier: "ParkingLocationAnnotation", selectedImage: selectedImage!, deselectedImage: deselectedImage!)
         image = deselectedImage!
     }

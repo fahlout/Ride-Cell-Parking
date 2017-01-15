@@ -88,6 +88,8 @@
 		9EEF53BB1E2C08E0004D4A3E /* ButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEF53B91E2C08E0004D4A3E /* ButtonTableViewCell.xib */; };
 		9EEF53BE1E2C0900004D4A3E /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF53BC1E2C0900004D4A3E /* TextTableViewCell.swift */; };
 		9EEF53BF1E2C0900004D4A3E /* TextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEF53BD1E2C0900004D4A3E /* TextTableViewCell.xib */; };
+		9EEF53C51E2C3BA0004D4A3E /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEF53C31E2C3BA0004D4A3E /* Fabric.framework */; };
+		9EEF53C61E2C3BA0004D4A3E /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEF53C41E2C3BA0004D4A3E /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -196,6 +198,8 @@
 		9EEF53B91E2C08E0004D4A3E /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonTableViewCell.xib; sourceTree = "<group>"; };
 		9EEF53BC1E2C0900004D4A3E /* TextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
 		9EEF53BD1E2C0900004D4A3E /* TextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextTableViewCell.xib; sourceTree = "<group>"; };
+		9EEF53C31E2C3BA0004D4A3E /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		9EEF53C41E2C3BA0004D4A3E /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +207,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EEF53C61E2C3BA0004D4A3E /* Crashlytics.framework in Frameworks */,
+				9EEF53C51E2C3BA0004D4A3E /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				9EEF52A81E2A885D004D4A3E /* AppDelegate.swift */,
+				9EEF53C21E2C3B8D004D4A3E /* Fabric */,
 				9EEF52E41E2A8C27004D4A3E /* Libraries */,
 				9EEF52D81E2A8C27004D4A3E /* Data Provider */,
 				9EEF52E31E2A8C27004D4A3E /* Models */,
@@ -565,6 +572,15 @@
 			name = Text;
 			sourceTree = "<group>";
 		};
+		9EEF53C21E2C3B8D004D4A3E /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				9EEF53C31E2C3BA0004D4A3E /* Fabric.framework */,
+				9EEF53C41E2C3BA0004D4A3E /* Crashlytics.framework */,
+			);
+			path = Fabric;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -575,6 +591,7 @@
 				9EEF52A11E2A885D004D4A3E /* Sources */,
 				9EEF52A21E2A885D004D4A3E /* Frameworks */,
 				9EEF52A31E2A885D004D4A3E /* Resources */,
+				9EEF53C01E2C3B56004D4A3E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -703,6 +720,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9EEF53C01E2C3B56004D4A3E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run d4ae177139bd2f0ca9833ee94393754033073b4a 29f0227af9e81964ca5c50d14ec746dbde7159e977a461ff87c1db54810d86fb";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9EEF52A11E2A885D004D4A3E /* Sources */ = {
@@ -920,6 +953,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7N7CGSK8P8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RideCellParking/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -934,6 +971,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7N7CGSK8P8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RideCellParking/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

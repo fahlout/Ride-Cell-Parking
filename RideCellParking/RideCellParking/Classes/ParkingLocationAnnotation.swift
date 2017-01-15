@@ -15,7 +15,9 @@ class ParkingLocationAnnotation: NSObject, MKAnnotation {
     
     var annotationView: MKAnnotationView {
         get {
-            return ParkingLocationAnnotationView(annotation: self)
+            let selectedImageName = parkingLocation.isReserved ? "ParkingReservedPin" : "ParkingPin"
+            let deselectedImageName = parkingLocation.isReserved ? "ParkingReservedPinSmall" : "ParkingPinSmall"
+            return ParkingLocationAnnotationView(annotation: self, selectedImageName: selectedImageName, deselectedImageName: deselectedImageName)
         }
     }
     

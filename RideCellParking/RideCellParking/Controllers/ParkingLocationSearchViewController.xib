@@ -213,7 +213,7 @@
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u74-GV-IXx">
                             <rect key="frame" x="219" y="104" width="140" height="30"/>
-                            <color key="backgroundColor" red="0.41960784309999999" green="0.74901960779999999" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.76470588240000004" green="0.21176470589999999" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="e5e-La-pjV"/>
                                 <constraint firstAttribute="width" constant="140" id="w5A-en-RGD"/>
