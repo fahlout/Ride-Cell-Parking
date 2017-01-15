@@ -21,4 +21,8 @@ class TwoLabelsTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func setContent(for title: String, detail: String) {
+        textLabel?.text = title
+        detailTextLabel?.text = detail
+    }
 }

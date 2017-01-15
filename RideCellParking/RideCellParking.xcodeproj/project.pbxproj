@@ -82,7 +82,6 @@
 		9EEF53A71E2C078D004D4A3E /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEF53A51E2C078D004D4A3E /* TitleTableViewCell.xib */; };
 		9EEF53AF1E2C07E2004D4A3E /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF53AD1E2C07E2004D4A3E /* SliderTableViewCell.swift */; };
 		9EEF53B01E2C07E2004D4A3E /* SliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEF53AE1E2C07E2004D4A3E /* SliderTableViewCell.xib */; };
-		9EEF53B31E2C0832004D4A3E /* TableViewCellHeightProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF53B21E2C0832004D4A3E /* TableViewCellHeightProtocol.swift */; };
 		9EEF53B61E2C08D2004D4A3E /* TwoLabelsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF53B41E2C08D2004D4A3E /* TwoLabelsTableViewCell.swift */; };
 		9EEF53B71E2C08D2004D4A3E /* TwoLabelsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEF53B51E2C08D2004D4A3E /* TwoLabelsTableViewCell.xib */; };
 		9EEF53BA1E2C08E0004D4A3E /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF53B81E2C08E0004D4A3E /* ButtonTableViewCell.swift */; };
@@ -191,7 +190,6 @@
 		9EEF53A51E2C078D004D4A3E /* TitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 		9EEF53AD1E2C07E2004D4A3E /* SliderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
 		9EEF53AE1E2C07E2004D4A3E /* SliderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SliderTableViewCell.xib; sourceTree = "<group>"; };
-		9EEF53B21E2C0832004D4A3E /* TableViewCellHeightProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellHeightProtocol.swift; sourceTree = "<group>"; };
 		9EEF53B41E2C08D2004D4A3E /* TwoLabelsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoLabelsTableViewCell.swift; sourceTree = "<group>"; };
 		9EEF53B51E2C08D2004D4A3E /* TwoLabelsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoLabelsTableViewCell.xib; sourceTree = "<group>"; };
 		9EEF53B81E2C08E0004D4A3E /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
@@ -249,7 +247,6 @@
 			isa = PBXGroup;
 			children = (
 				9EEF52A81E2A885D004D4A3E /* AppDelegate.swift */,
-				9EEF53B11E2C081F004D4A3E /* Protocols */,
 				9EEF52E41E2A8C27004D4A3E /* Libraries */,
 				9EEF52D81E2A8C27004D4A3E /* Data Provider */,
 				9EEF52E31E2A8C27004D4A3E /* Models */,
@@ -568,14 +565,6 @@
 			name = Text;
 			sourceTree = "<group>";
 		};
-		9EEF53B11E2C081F004D4A3E /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				9EEF53B21E2C0832004D4A3E /* TableViewCellHeightProtocol.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -738,7 +727,6 @@
 				9EEF52E61E2A8C27004D4A3E /* DataProvider.swift in Sources */,
 				9EEF53551E2A8F1E004D4A3E /* Date+Comparators.swift in Sources */,
 				9EEF52A91E2A885D004D4A3E /* AppDelegate.swift in Sources */,
-				9EEF53B31E2C0832004D4A3E /* TableViewCellHeightProtocol.swift in Sources */,
 				9EEF52E81E2A8C27004D4A3E /* DataProviderOperationProtocol.swift in Sources */,
 				9EEF531A1E2A8ED2004D4A3E /* TransformType.swift in Sources */,
 				9EEF536E1E2AA2B9004D4A3E /* ReservationReset+Mappings.swift in Sources */,

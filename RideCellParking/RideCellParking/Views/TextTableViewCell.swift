@@ -21,4 +21,7 @@ class TextTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func setContent(for text: String) {
+        textLabel?.text = text
+    }
 }

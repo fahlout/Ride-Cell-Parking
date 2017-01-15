@@ -9,6 +9,9 @@
 import UIKit
 
 class ButtonTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var button: UIButton!
+    var action: (() -> Void)?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,4 +24,19 @@ class ButtonTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func setContent(for title: String, enabled: Bool, action: (() -> Void)?) {
+        button.setTitle(title, for: .normal)
+        self.action = action
+        
+        if enabled {
+            button.backgroundColor = .rideCellBlue
+        } else {
+            button.backgroundColor = .gray
+        }
+        button.isEnabled = enabled
+    }
+    
+    @IBAction func didTapButton(_ sender: UIButton) {
+        action?()
+    }
 }

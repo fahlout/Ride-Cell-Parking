@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ParkingLocationSearchViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+class ParkingLocationSearchViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, ReservationDelegate {
     
     let metersPerMile = 1609.344
 
@@ -346,7 +346,8 @@ extension ParkingLocationSearchViewController {
                 distance = "\(String(format: "%.02f", userLocation.distance(from: parkingLocationCoordinates)/metersPerMile))miles"
             }
             
-            let parkingLocationDetailsVC = ParkingLocationDetailsTableViewController(nibName: "ParkingLocationDetailsTableViewController", bundle: nil, parkingLocation: selectedParkingLocation, address: parkingLocationAddress ?? "Address not available", distance: distance)
+            let parkingLocationDetailsVC = ParkingLocationDetailsTableViewController(nibName: "ParkingLocationDetailsTableViewController", bundle: nil, parkingLocation: selectedParkingLocation, address: parkingLocationAddress ?? "Address not available", distance: distance, time: timeSlider.value)
+            parkingLocationDetailsVC.delegate = self
             navigationController?.pushViewController(parkingLocationDetailsVC, animated: true)
         }
     }
@@ -386,5 +387,11 @@ extension ParkingLocationSearchViewController {
         alertController.addAction(checkAction)
         alertController.preferredAction = checkAction
         present(alertController, animated: true, completion: nil)
+    }
+    
+    // MARK: - Reservation Delegate
+    
+    func didReserve(parkingLocation: ParkingLocation) {
+        self.updateParkingLocation(for: parkingLocation)
     }
 }

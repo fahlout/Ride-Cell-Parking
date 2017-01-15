@@ -10,6 +10,10 @@ import UIKit
 
 class SliderTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var timeSlider: UISlider!
+    @IBOutlet weak var timeLabel: UILabel!
+    var action: (Float) -> Void = {_ in }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +25,14 @@ class SliderTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func setContent(for time: Float, action: @escaping (Float) -> Void) {
+        timeSlider.setValue(time, animated: true)
+        timeLabel.text = "\(Int(timeSlider.value)) min"
+        self.action = action
+    }
+    
+    @IBAction func didChangeTimeSlider(_ sender: UISlider) {
+        timeLabel.text = "\(Int(sender.value)) min"
+        action(sender.value)
+    }
 }

@@ -6,18 +6,75 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SliderTableViewCell" id="KGk-i7-Jjw" customClass="SliderTableViewCell" customModule="RideCellParking" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SliderTableViewCell" rowHeight="94" id="KGk-i7-Jjw" customClass="SliderTableViewCell" customModule="RideCellParking" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="10" maxValue="120" translatesAutoresizingMaskIntoConstraints="NO" id="SAi-KY-dr3">
+                        <rect key="frame" x="14" y="55" width="347" height="31"/>
+                        <color key="tintColor" red="0.76470588240000004" green="0.21176470589999999" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="thumbTintColor" red="0.76470588240000004" green="0.21176470589999999" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <action selector="didChangeTimeSlider:" destination="KGk-i7-Jjw" eventType="valueChanged" id="R5A-ZF-5Y4"/>
+                        </connections>
+                    </slider>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Q6-TE-zJa">
+                        <rect key="frame" x="16" y="38" width="46" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="GE8-D4-KeD"/>
+                            <constraint firstAttribute="height" constant="13" id="NBJ-D9-KaF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120min" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rma-TV-j47">
+                        <rect key="frame" x="313" y="42" width="46" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="Ddn-sO-lwj"/>
+                            <constraint firstAttribute="height" constant="13" id="RdJ-0U-YT6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 min" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqx-Nt-zvY">
+                        <rect key="frame" x="16" y="7" width="343" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="76L-Ws-IUn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <color key="textColor" red="0.76470588240000004" green="0.21176470589999999" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9Q6-TE-zJa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="DIh-Xu-VJI"/>
+                    <constraint firstItem="SAi-KY-dr3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Jm4-8q-SqD"/>
+                    <constraint firstItem="SAi-KY-dr3" firstAttribute="top" secondItem="rma-TV-j47" secondAttribute="bottom" id="YDx-ML-2YS"/>
+                    <constraint firstAttribute="trailing" secondItem="SAi-KY-dr3" secondAttribute="trailing" constant="16" id="ar5-jZ-1mq"/>
+                    <constraint firstItem="bqx-Nt-zvY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="cPl-73-dpV"/>
+                    <constraint firstAttribute="trailing" secondItem="bqx-Nt-zvY" secondAttribute="trailing" constant="16" id="gDa-rR-92T"/>
+                    <constraint firstItem="bqx-Nt-zvY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="gZg-TP-nVk"/>
+                    <constraint firstItem="SAi-KY-dr3" firstAttribute="top" secondItem="9Q6-TE-zJa" secondAttribute="bottom" constant="4" id="h48-eA-RTV"/>
+                    <constraint firstItem="SAi-KY-dr3" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="tZ4-yO-hT6"/>
+                    <constraint firstAttribute="trailing" secondItem="rma-TV-j47" secondAttribute="trailing" constant="16" id="yIS-VE-MZV"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="timeLabel" destination="bqx-Nt-zvY" id="PB8-F1-uYJ"/>
+                <outlet property="timeSlider" destination="SAi-KY-dr3" id="X6p-Md-1fC"/>
+            </connections>
+            <point key="canvasLocation" x="12" y="29"/>
         </tableViewCell>
     </objects>
 </document>
