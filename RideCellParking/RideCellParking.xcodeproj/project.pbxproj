@@ -76,6 +76,19 @@
 		9EEF53921E2B05D8004D4A3E /* ParkingLocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF53911E2B05D8004D4A3E /* ParkingLocationAnnotation.swift */; };
 		9EEF53961E2B068C004D4A3E /* ParkingLocationAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF53951E2B068C004D4A3E /* ParkingLocationAnnotationView.swift */; };
 		9EEF53981E2B06B6004D4A3E /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF53971E2B06B6004D4A3E /* MapAnnotationView.swift */; };
+		9EEF53A11E2C0493004D4A3E /* ParkingLocationDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF539F1E2C0493004D4A3E /* ParkingLocationDetailsTableViewController.swift */; };
+		9EEF53A21E2C0493004D4A3E /* ParkingLocationDetailsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEF53A01E2C0493004D4A3E /* ParkingLocationDetailsTableViewController.xib */; };
+		9EEF53A61E2C078D004D4A3E /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF53A41E2C078D004D4A3E /* TitleTableViewCell.swift */; };
+		9EEF53A71E2C078D004D4A3E /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEF53A51E2C078D004D4A3E /* TitleTableViewCell.xib */; };
+		9EEF53AF1E2C07E2004D4A3E /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF53AD1E2C07E2004D4A3E /* SliderTableViewCell.swift */; };
+		9EEF53B01E2C07E2004D4A3E /* SliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEF53AE1E2C07E2004D4A3E /* SliderTableViewCell.xib */; };
+		9EEF53B31E2C0832004D4A3E /* TableViewCellHeightProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF53B21E2C0832004D4A3E /* TableViewCellHeightProtocol.swift */; };
+		9EEF53B61E2C08D2004D4A3E /* TwoLabelsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF53B41E2C08D2004D4A3E /* TwoLabelsTableViewCell.swift */; };
+		9EEF53B71E2C08D2004D4A3E /* TwoLabelsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEF53B51E2C08D2004D4A3E /* TwoLabelsTableViewCell.xib */; };
+		9EEF53BA1E2C08E0004D4A3E /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF53B81E2C08E0004D4A3E /* ButtonTableViewCell.swift */; };
+		9EEF53BB1E2C08E0004D4A3E /* ButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEF53B91E2C08E0004D4A3E /* ButtonTableViewCell.xib */; };
+		9EEF53BE1E2C0900004D4A3E /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF53BC1E2C0900004D4A3E /* TextTableViewCell.swift */; };
+		9EEF53BF1E2C0900004D4A3E /* TextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEF53BD1E2C0900004D4A3E /* TextTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +185,19 @@
 		9EEF53911E2B05D8004D4A3E /* ParkingLocationAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLocationAnnotation.swift; sourceTree = "<group>"; };
 		9EEF53951E2B068C004D4A3E /* ParkingLocationAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLocationAnnotationView.swift; sourceTree = "<group>"; };
 		9EEF53971E2B06B6004D4A3E /* MapAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
+		9EEF539F1E2C0493004D4A3E /* ParkingLocationDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLocationDetailsTableViewController.swift; sourceTree = "<group>"; };
+		9EEF53A01E2C0493004D4A3E /* ParkingLocationDetailsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParkingLocationDetailsTableViewController.xib; sourceTree = "<group>"; };
+		9EEF53A41E2C078D004D4A3E /* TitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		9EEF53A51E2C078D004D4A3E /* TitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
+		9EEF53AD1E2C07E2004D4A3E /* SliderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
+		9EEF53AE1E2C07E2004D4A3E /* SliderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SliderTableViewCell.xib; sourceTree = "<group>"; };
+		9EEF53B21E2C0832004D4A3E /* TableViewCellHeightProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellHeightProtocol.swift; sourceTree = "<group>"; };
+		9EEF53B41E2C08D2004D4A3E /* TwoLabelsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoLabelsTableViewCell.swift; sourceTree = "<group>"; };
+		9EEF53B51E2C08D2004D4A3E /* TwoLabelsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoLabelsTableViewCell.xib; sourceTree = "<group>"; };
+		9EEF53B81E2C08E0004D4A3E /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		9EEF53B91E2C08E0004D4A3E /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonTableViewCell.xib; sourceTree = "<group>"; };
+		9EEF53BC1E2C0900004D4A3E /* TextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
+		9EEF53BD1E2C0900004D4A3E /* TextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				9EEF52A81E2A885D004D4A3E /* AppDelegate.swift */,
+				9EEF53B11E2C081F004D4A3E /* Protocols */,
 				9EEF52E41E2A8C27004D4A3E /* Libraries */,
 				9EEF52D81E2A8C27004D4A3E /* Data Provider */,
 				9EEF52E31E2A8C27004D4A3E /* Models */,
@@ -306,6 +333,7 @@
 			children = (
 				9EEF538B1E2AE8B9004D4A3E /* Navigation Controller */,
 				9EEF53731E2AE28C004D4A3E /* Search */,
+				9EEF539E1E2C0474004D4A3E /* Parking Location Details */,
 				9EEF53741E2AE292004D4A3E /* Reservation */,
 				9EEF53761E2AE2A5004D4A3E /* My Car */,
 			);
@@ -337,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				9EEF53931E2B0671004D4A3E /* Annotation Views */,
+				9EEF53A31E2C06FC004D4A3E /* Table View Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -473,6 +502,80 @@
 			name = Annotation;
 			sourceTree = "<group>";
 		};
+		9EEF539E1E2C0474004D4A3E /* Parking Location Details */ = {
+			isa = PBXGroup;
+			children = (
+				9EEF539F1E2C0493004D4A3E /* ParkingLocationDetailsTableViewController.swift */,
+				9EEF53A01E2C0493004D4A3E /* ParkingLocationDetailsTableViewController.xib */,
+			);
+			name = "Parking Location Details";
+			sourceTree = "<group>";
+		};
+		9EEF53A31E2C06FC004D4A3E /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9EEF53AC1E2C07C6004D4A3E /* Text */,
+				9EEF53AB1E2C07C0004D4A3E /* Button */,
+				9EEF53AA1E2C079D004D4A3E /* Two Labels */,
+				9EEF53A91E2C0798004D4A3E /* Slider */,
+				9EEF53A81E2C0792004D4A3E /* Title */,
+			);
+			name = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		9EEF53A81E2C0792004D4A3E /* Title */ = {
+			isa = PBXGroup;
+			children = (
+				9EEF53A41E2C078D004D4A3E /* TitleTableViewCell.swift */,
+				9EEF53A51E2C078D004D4A3E /* TitleTableViewCell.xib */,
+			);
+			name = Title;
+			sourceTree = "<group>";
+		};
+		9EEF53A91E2C0798004D4A3E /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				9EEF53AD1E2C07E2004D4A3E /* SliderTableViewCell.swift */,
+				9EEF53AE1E2C07E2004D4A3E /* SliderTableViewCell.xib */,
+			);
+			name = Slider;
+			sourceTree = "<group>";
+		};
+		9EEF53AA1E2C079D004D4A3E /* Two Labels */ = {
+			isa = PBXGroup;
+			children = (
+				9EEF53B41E2C08D2004D4A3E /* TwoLabelsTableViewCell.swift */,
+				9EEF53B51E2C08D2004D4A3E /* TwoLabelsTableViewCell.xib */,
+			);
+			name = "Two Labels";
+			sourceTree = "<group>";
+		};
+		9EEF53AB1E2C07C0004D4A3E /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				9EEF53B81E2C08E0004D4A3E /* ButtonTableViewCell.swift */,
+				9EEF53B91E2C08E0004D4A3E /* ButtonTableViewCell.xib */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		9EEF53AC1E2C07C6004D4A3E /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				9EEF53BC1E2C0900004D4A3E /* TextTableViewCell.swift */,
+				9EEF53BD1E2C0900004D4A3E /* TextTableViewCell.xib */,
+			);
+			name = Text;
+			sourceTree = "<group>";
+		};
+		9EEF53B11E2C081F004D4A3E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9EEF53B21E2C0832004D4A3E /* TableViewCellHeightProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -581,10 +684,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EEF53A21E2C0493004D4A3E /* ParkingLocationDetailsTableViewController.xib in Resources */,
 				9EEF52B31E2A885D004D4A3E /* LaunchScreen.storyboard in Resources */,
+				9EEF53BF1E2C0900004D4A3E /* TextTableViewCell.xib in Resources */,
 				9EEF52B01E2A885D004D4A3E /* Assets.xcassets in Resources */,
 				9EEF53861E2AE344004D4A3E /* MyCarTableViewController.xib in Resources */,
+				9EEF53A71E2C078D004D4A3E /* TitleTableViewCell.xib in Resources */,
+				9EEF53B01E2C07E2004D4A3E /* SliderTableViewCell.xib in Resources */,
 				9EEF53821E2AE336004D4A3E /* ReservationTableViewController.xib in Resources */,
+				9EEF53B71E2C08D2004D4A3E /* TwoLabelsTableViewCell.xib in Resources */,
+				9EEF53BB1E2C08E0004D4A3E /* ButtonTableViewCell.xib in Resources */,
 				9EEF53721E2AE287004D4A3E /* ParkingLocationSearchViewController.xib in Resources */,
 				9EEF535B1E2A8F1E004D4A3E /* DateTools.bundle in Resources */,
 			);
@@ -618,6 +727,7 @@
 				9EEF53711E2AE287004D4A3E /* ParkingLocationSearchViewController.swift in Sources */,
 				9EEF53581E2A8F1E004D4A3E /* Date+Inits.swift in Sources */,
 				9EEF530C1E2A8ED2004D4A3E /* EnumTransform.swift in Sources */,
+				9EEF53A61E2C078D004D4A3E /* TitleTableViewCell.swift in Sources */,
 				9EEF53101E2A8ED2004D4A3E /* ISO8601DateTransform.swift in Sources */,
 				9EEF53641E2A969E004D4A3E /* DoubleTransform.swift in Sources */,
 				9EEF531F1E2A8EF7004D4A3E /* EasyTimer.swift in Sources */,
@@ -628,6 +738,7 @@
 				9EEF52E61E2A8C27004D4A3E /* DataProvider.swift in Sources */,
 				9EEF53551E2A8F1E004D4A3E /* Date+Comparators.swift in Sources */,
 				9EEF52A91E2A885D004D4A3E /* AppDelegate.swift in Sources */,
+				9EEF53B31E2C0832004D4A3E /* TableViewCellHeightProtocol.swift in Sources */,
 				9EEF52E81E2A8C27004D4A3E /* DataProviderOperationProtocol.swift in Sources */,
 				9EEF531A1E2A8ED2004D4A3E /* TransformType.swift in Sources */,
 				9EEF536E1E2AA2B9004D4A3E /* ReservationReset+Mappings.swift in Sources */,
@@ -636,8 +747,10 @@
 				9EEF52E91E2A8C27004D4A3E /* DataProviderProtocol.swift in Sources */,
 				9EEF530A1E2A8ED2004D4A3E /* DictionaryTransform.swift in Sources */,
 				9EEF538D1E2AE8DB004D4A3E /* RideCellNavigationController.swift in Sources */,
+				9EEF53AF1E2C07E2004D4A3E /* SliderTableViewCell.swift in Sources */,
 				9EEF53191E2A8ED2004D4A3E /* TransformOperators.swift in Sources */,
 				9EEF530E1E2A8ED2004D4A3E /* HexColorTransform.swift in Sources */,
+				9EEF53BE1E2C0900004D4A3E /* TextTableViewCell.swift in Sources */,
 				9EEF53111E2A8ED2004D4A3E /* Map.swift in Sources */,
 				9EEF530D1E2A8ED2004D4A3E /* FromJSON.swift in Sources */,
 				9EEF52EB1E2A8C27004D4A3E /* WebProvider.swift in Sources */,
@@ -647,10 +760,13 @@
 				9EEF52ED1E2A8DCE004D4A3E /* ParkingLocation.swift in Sources */,
 				9EEF53061E2A8ED2004D4A3E /* CustomDateFormatTransform.swift in Sources */,
 				9EEF53171E2A8ED2004D4A3E /* ToJSON.swift in Sources */,
+				9EEF53BA1E2C08E0004D4A3E /* ButtonTableViewCell.swift in Sources */,
 				9EEF531B1E2A8ED2004D4A3E /* URLTransform.swift in Sources */,
 				9EEF53161E2A8ED2004D4A3E /* Operators.swift in Sources */,
+				9EEF53B61E2C08D2004D4A3E /* TwoLabelsTableViewCell.swift in Sources */,
 				9EEF53601E2A8F1E004D4A3E /* TimePeriodChain.swift in Sources */,
 				9EEF53531E2A8F1E004D4A3E /* Constants.swift in Sources */,
+				9EEF53A11E2C0493004D4A3E /* ParkingLocationDetailsTableViewController.swift in Sources */,
 				9EEF53091E2A8ED2004D4A3E /* DateTransform.swift in Sources */,
 				9EEF53591E2A8F1E004D4A3E /* Date+Manipulations.swift in Sources */,
 				9EEF53621E2A8F1E004D4A3E /* TimePeriodGroup.swift in Sources */,

@@ -1,25 +1,27 @@
 //
-//  ReservationTableViewController.swift
+//  ParkingLocationDetailsTableViewController.swift
 //  RideCellParking
 //
-//  Created by Niklas Fahl on 1/14/17.
+//  Created by Niklas Fahl on 1/15/17.
 //  Copyright © 2017 Niklas Fahl. All rights reserved.
 //
 
 import UIKit
 
-let reservationKey = "RESERVATION_KEY"
-
-class ReservationTableViewController: UITableViewController {
+class ParkingLocationDetailsTableViewController: UITableViewController {
     
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    var parkingLocation: ParkingLocation!
+    var parkingLocationAddress: String!
+    var parkingLocationDistance: String!
+    
+    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?, parkingLocation: ParkingLocation, address: String, distance: String) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
-        title = "Reservation"
+        title = "Parking Location"
         
-        let tabBarImage = UIImage(named: "Reservation")
-        tabBarItem.selectedImage = tabBarImage
-        tabBarItem.image = tabBarImage
+        self.parkingLocation = parkingLocation
+        self.parkingLocationAddress = address
+        self.parkingLocationDistance = distance
     }
     
     required init?(coder aDecoder: NSCoder) {
