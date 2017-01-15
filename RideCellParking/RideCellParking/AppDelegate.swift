@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UITabBarController()
+        window?.rootViewController = getTabBarController()
         
         window?.makeKeyAndVisible()
         
@@ -47,6 +47,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
 }
 
+extension AppDelegate {
+    // MARK: - Tab Bar Setup
+    func getTabBarController() -> UITabBarController {
+        let tabBarController = UITabBarController()
+        tabBarController.tabBar.tintColor = .rideCellBlue
+        
+        // Parking Location Search Controller
+        let parkingLocationSearchVC = ParkingLocationSearchViewController(nibName: "ParkingLocationSearchViewController", bundle: nil)
+        let parkingLocationSearchNC = RideCellNavigationController(rootViewController: parkingLocationSearchVC)
+        
+        // Reservation Controller
+        let reservationVC = ReservationTableViewController(nibName: "ReservationTableViewController", bundle: nil)
+        let reservationNC = RideCellNavigationController(rootViewController: reservationVC)
+        
+        // My Car Controller
+        let myCarVC = MyCarTableViewController(nibName: "MyCarTableViewController", bundle: nil)
+        let myCarNC = RideCellNavigationController(rootViewController: myCarVC)
+        
+        // Add to tab bar
+        tabBarController.viewControllers = [parkingLocationSearchNC, reservationNC, myCarNC]
+        
+        return tabBarController
+    }
+}

@@ -64,6 +64,18 @@
 		9EEF536A1E2AA0D2004D4A3E /* ReservationRequestMinutes+Mappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF53691E2AA0D2004D4A3E /* ReservationRequestMinutes+Mappings.swift */; };
 		9EEF536C1E2AA27B004D4A3E /* ReservationReset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF536B1E2AA27B004D4A3E /* ReservationReset.swift */; };
 		9EEF536E1E2AA2B9004D4A3E /* ReservationReset+Mappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF536D1E2AA2B9004D4A3E /* ReservationReset+Mappings.swift */; };
+		9EEF53711E2AE287004D4A3E /* ParkingLocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF536F1E2AE287004D4A3E /* ParkingLocationSearchViewController.swift */; };
+		9EEF53721E2AE287004D4A3E /* ParkingLocationSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEF53701E2AE287004D4A3E /* ParkingLocationSearchViewController.xib */; };
+		9EEF53811E2AE336004D4A3E /* ReservationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF537F1E2AE336004D4A3E /* ReservationTableViewController.swift */; };
+		9EEF53821E2AE336004D4A3E /* ReservationTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEF53801E2AE336004D4A3E /* ReservationTableViewController.xib */; };
+		9EEF53851E2AE344004D4A3E /* MyCarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF53831E2AE344004D4A3E /* MyCarTableViewController.swift */; };
+		9EEF53861E2AE344004D4A3E /* MyCarTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEF53841E2AE344004D4A3E /* MyCarTableViewController.xib */; };
+		9EEF538A1E2AE3FF004D4A3E /* UIColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF53891E2AE3FF004D4A3E /* UIColor+Custom.swift */; };
+		9EEF538D1E2AE8DB004D4A3E /* RideCellNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF538C1E2AE8DB004D4A3E /* RideCellNavigationController.swift */; };
+		9EEF538F1E2AF925004D4A3E /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF538E1E2AF925004D4A3E /* UIViewController+Alert.swift */; };
+		9EEF53921E2B05D8004D4A3E /* ParkingLocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF53911E2B05D8004D4A3E /* ParkingLocationAnnotation.swift */; };
+		9EEF53961E2B068C004D4A3E /* ParkingLocationAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF53951E2B068C004D4A3E /* ParkingLocationAnnotationView.swift */; };
+		9EEF53981E2B06B6004D4A3E /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEF53971E2B06B6004D4A3E /* MapAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +160,18 @@
 		9EEF53691E2AA0D2004D4A3E /* ReservationRequestMinutes+Mappings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReservationRequestMinutes+Mappings.swift"; sourceTree = "<group>"; };
 		9EEF536B1E2AA27B004D4A3E /* ReservationReset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationReset.swift; sourceTree = "<group>"; };
 		9EEF536D1E2AA2B9004D4A3E /* ReservationReset+Mappings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReservationReset+Mappings.swift"; sourceTree = "<group>"; };
+		9EEF536F1E2AE287004D4A3E /* ParkingLocationSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLocationSearchViewController.swift; sourceTree = "<group>"; };
+		9EEF53701E2AE287004D4A3E /* ParkingLocationSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParkingLocationSearchViewController.xib; sourceTree = "<group>"; };
+		9EEF537F1E2AE336004D4A3E /* ReservationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationTableViewController.swift; sourceTree = "<group>"; };
+		9EEF53801E2AE336004D4A3E /* ReservationTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReservationTableViewController.xib; sourceTree = "<group>"; };
+		9EEF53831E2AE344004D4A3E /* MyCarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCarTableViewController.swift; sourceTree = "<group>"; };
+		9EEF53841E2AE344004D4A3E /* MyCarTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCarTableViewController.xib; sourceTree = "<group>"; };
+		9EEF53891E2AE3FF004D4A3E /* UIColor+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Custom.swift"; sourceTree = "<group>"; };
+		9EEF538C1E2AE8DB004D4A3E /* RideCellNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideCellNavigationController.swift; sourceTree = "<group>"; };
+		9EEF538E1E2AF925004D4A3E /* UIViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		9EEF53911E2B05D8004D4A3E /* ParkingLocationAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLocationAnnotation.swift; sourceTree = "<group>"; };
+		9EEF53951E2B068C004D4A3E /* ParkingLocationAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingLocationAnnotationView.swift; sourceTree = "<group>"; };
+		9EEF53971E2B06B6004D4A3E /* MapAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +226,7 @@
 				9EEF52E41E2A8C27004D4A3E /* Libraries */,
 				9EEF52D81E2A8C27004D4A3E /* Data Provider */,
 				9EEF52E31E2A8C27004D4A3E /* Models */,
+				9EEF53901E2B05C3004D4A3E /* Classes */,
 				9EEF52E51E2A8C27004D4A3E /* Views */,
 				9EEF52E21E2A8C27004D4A3E /* Controllers */,
 				9EEF52D71E2A8B34004D4A3E /* Supporting Files */,
@@ -279,6 +304,10 @@
 		9EEF52E21E2A8C27004D4A3E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9EEF538B1E2AE8B9004D4A3E /* Navigation Controller */,
+				9EEF53731E2AE28C004D4A3E /* Search */,
+				9EEF53741E2AE292004D4A3E /* Reservation */,
+				9EEF53761E2AE2A5004D4A3E /* My Car */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -297,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				9EEF53421E2A8F1E004D4A3E /* DateTools */,
+				9EEF53881E2AE3EF004D4A3E /* Extensions */,
 				9EEF531C1E2A8EF7004D4A3E /* Easy Timer */,
 				9EEF52EE1E2A8ED2004D4A3E /* ObjectMapper */,
 			);
@@ -306,6 +336,7 @@
 		9EEF52E51E2A8C27004D4A3E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9EEF53931E2B0671004D4A3E /* Annotation Views */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -371,6 +402,75 @@
 				9EEF53521E2A8F1E004D4A3E /* TimePeriodGroup.swift */,
 			);
 			path = DateTools;
+			sourceTree = "<group>";
+		};
+		9EEF53731E2AE28C004D4A3E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				9EEF536F1E2AE287004D4A3E /* ParkingLocationSearchViewController.swift */,
+				9EEF53701E2AE287004D4A3E /* ParkingLocationSearchViewController.xib */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		9EEF53741E2AE292004D4A3E /* Reservation */ = {
+			isa = PBXGroup;
+			children = (
+				9EEF537F1E2AE336004D4A3E /* ReservationTableViewController.swift */,
+				9EEF53801E2AE336004D4A3E /* ReservationTableViewController.xib */,
+			);
+			name = Reservation;
+			sourceTree = "<group>";
+		};
+		9EEF53761E2AE2A5004D4A3E /* My Car */ = {
+			isa = PBXGroup;
+			children = (
+				9EEF53831E2AE344004D4A3E /* MyCarTableViewController.swift */,
+				9EEF53841E2AE344004D4A3E /* MyCarTableViewController.xib */,
+			);
+			name = "My Car";
+			sourceTree = "<group>";
+		};
+		9EEF53881E2AE3EF004D4A3E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9EEF53891E2AE3FF004D4A3E /* UIColor+Custom.swift */,
+				9EEF538E1E2AF925004D4A3E /* UIViewController+Alert.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9EEF538B1E2AE8B9004D4A3E /* Navigation Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9EEF538C1E2AE8DB004D4A3E /* RideCellNavigationController.swift */,
+			);
+			name = "Navigation Controller";
+			sourceTree = "<group>";
+		};
+		9EEF53901E2B05C3004D4A3E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9EEF53941E2B0678004D4A3E /* Annotation */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9EEF53931E2B0671004D4A3E /* Annotation Views */ = {
+			isa = PBXGroup;
+			children = (
+				9EEF53971E2B06B6004D4A3E /* MapAnnotationView.swift */,
+				9EEF53951E2B068C004D4A3E /* ParkingLocationAnnotationView.swift */,
+			);
+			name = "Annotation Views";
+			sourceTree = "<group>";
+		};
+		9EEF53941E2B0678004D4A3E /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				9EEF53911E2B05D8004D4A3E /* ParkingLocationAnnotation.swift */,
+			);
+			name = Annotation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -483,6 +583,9 @@
 			files = (
 				9EEF52B31E2A885D004D4A3E /* LaunchScreen.storyboard in Resources */,
 				9EEF52B01E2A885D004D4A3E /* Assets.xcassets in Resources */,
+				9EEF53861E2AE344004D4A3E /* MyCarTableViewController.xib in Resources */,
+				9EEF53821E2AE336004D4A3E /* ReservationTableViewController.xib in Resources */,
+				9EEF53721E2AE287004D4A3E /* ParkingLocationSearchViewController.xib in Resources */,
 				9EEF535B1E2A8F1E004D4A3E /* DateTools.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +615,7 @@
 				9EEF535F1E2A8F1E004D4A3E /* TimePeriod.swift in Sources */,
 				9EEF535E1E2A8F1E004D4A3E /* TimeChunk.swift in Sources */,
 				9EEF530F1E2A8ED2004D4A3E /* ImmutableMappable.swift in Sources */,
+				9EEF53711E2AE287004D4A3E /* ParkingLocationSearchViewController.swift in Sources */,
 				9EEF53581E2A8F1E004D4A3E /* Date+Inits.swift in Sources */,
 				9EEF530C1E2A8ED2004D4A3E /* EnumTransform.swift in Sources */,
 				9EEF53101E2A8ED2004D4A3E /* ISO8601DateTransform.swift in Sources */,
@@ -520,6 +624,7 @@
 				9EEF53181E2A8ED2004D4A3E /* TransformOf.swift in Sources */,
 				9EEF530B1E2A8ED2004D4A3E /* EnumOperators.swift in Sources */,
 				9EEF53571E2A8F1E004D4A3E /* Date+Format.swift in Sources */,
+				9EEF53961E2B068C004D4A3E /* ParkingLocationAnnotationView.swift in Sources */,
 				9EEF52E61E2A8C27004D4A3E /* DataProvider.swift in Sources */,
 				9EEF53551E2A8F1E004D4A3E /* Date+Comparators.swift in Sources */,
 				9EEF52A91E2A885D004D4A3E /* AppDelegate.swift in Sources */,
@@ -530,12 +635,14 @@
 				9EEF536C1E2AA27B004D4A3E /* ReservationReset.swift in Sources */,
 				9EEF52E91E2A8C27004D4A3E /* DataProviderProtocol.swift in Sources */,
 				9EEF530A1E2A8ED2004D4A3E /* DictionaryTransform.swift in Sources */,
+				9EEF538D1E2AE8DB004D4A3E /* RideCellNavigationController.swift in Sources */,
 				9EEF53191E2A8ED2004D4A3E /* TransformOperators.swift in Sources */,
 				9EEF530E1E2A8ED2004D4A3E /* HexColorTransform.swift in Sources */,
 				9EEF53111E2A8ED2004D4A3E /* Map.swift in Sources */,
 				9EEF530D1E2A8ED2004D4A3E /* FromJSON.swift in Sources */,
 				9EEF52EB1E2A8C27004D4A3E /* WebProvider.swift in Sources */,
 				9EEF53081E2A8ED2004D4A3E /* DateFormatterTransform.swift in Sources */,
+				9EEF53981E2B06B6004D4A3E /* MapAnnotationView.swift in Sources */,
 				9EEF53611E2A8F1E004D4A3E /* TimePeriodCollection.swift in Sources */,
 				9EEF52ED1E2A8DCE004D4A3E /* ParkingLocation.swift in Sources */,
 				9EEF53061E2A8ED2004D4A3E /* CustomDateFormatTransform.swift in Sources */,
@@ -549,17 +656,22 @@
 				9EEF53621E2A8F1E004D4A3E /* TimePeriodGroup.swift in Sources */,
 				9EEF53141E2A8ED2004D4A3E /* Mapper.swift in Sources */,
 				9EEF53121E2A8ED2004D4A3E /* MapError.swift in Sources */,
+				9EEF538A1E2AE3FF004D4A3E /* UIColor+Custom.swift in Sources */,
 				9EEF536A1E2AA0D2004D4A3E /* ReservationRequestMinutes+Mappings.swift in Sources */,
 				9EEF53541E2A8F1E004D4A3E /* Date+Bundle.swift in Sources */,
 				9EEF52EA1E2A8C27004D4A3E /* ParkingLocation+Mappings.swift in Sources */,
 				9EEF53681E2AA077004D4A3E /* ReservationRequestMinutes.swift in Sources */,
 				9EEF53131E2A8ED2004D4A3E /* Mappable.swift in Sources */,
+				9EEF538F1E2AF925004D4A3E /* UIViewController+Alert.swift in Sources */,
 				9EEF535D1E2A8F1E004D4A3E /* Integer+DateTools.swift in Sources */,
 				9EEF53071E2A8ED2004D4A3E /* DataTransform.swift in Sources */,
+				9EEF53851E2AE344004D4A3E /* MyCarTableViewController.swift in Sources */,
 				9EEF535A1E2A8F1E004D4A3E /* Date+TimeAgo.swift in Sources */,
+				9EEF53811E2AE336004D4A3E /* ReservationTableViewController.swift in Sources */,
 				9EEF53201E2A8EF7004D4A3E /* EasyTimerTimeInterval.swift in Sources */,
 				9EEF53151E2A8ED2004D4A3E /* NSDecimalNumberTransform.swift in Sources */,
 				9EEF52E71E2A8C27004D4A3E /* DataProviderExtensions.swift in Sources */,
+				9EEF53921E2B05D8004D4A3E /* ParkingLocationAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,7 +817,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7N7CGSK8P8;
 				INFOPLIST_FILE = RideCellParking/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikfahl.RideCellParking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -719,7 +831,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7N7CGSK8P8;
 				INFOPLIST_FILE = RideCellParking/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikfahl.RideCellParking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
