@@ -237,6 +237,7 @@ extension ReservationTableViewController {
                 UserDefaults.standard.set(parkingLocation.toJSONString(), forKey: reservationKey)
                 UserDefaults.standard.set(Date(), forKey: reservationStartTimeKey)
                 self.updateReservationReference()
+                self.showAlert(with: "Great!", message: "Your reservation extension has been confirmed.")
             }, error: { (error: Error) in
                 self.showAlert(with: "Oops", message: "Your reservation could not be extended at this time. Please try again.")
             })
@@ -283,8 +284,10 @@ extension ReservationTableViewController {
     }
     
     func timeLeft(for reservation: ParkingLocation) -> String {
-        let chunk = Date().chunkBetween(date: reservation.reservedUntil)
-        return "\(chunk.minutes):\(chunk.seconds < 10 ? "0" + "\(chunk.seconds)" : "\(chunk.seconds)")"
+        let totalSeconds = Double(reservation.reservedUntil.seconds(from: Date()))
+        let minutes = Int(floor(totalSeconds / 60.0))
+        let seconds = Int(totalSeconds - Double(minutes) * 60.0)
+        return "\(minutes):\(seconds < 10 ? "0" + "\(seconds)" : "\(seconds)")"
     }
 }
 
